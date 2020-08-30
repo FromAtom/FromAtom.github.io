@@ -76,7 +76,7 @@ body {
 
     svg.wave {
         position: relative;
-        top: -1px;
+        top: -5px;
     }
 
     .section-wrap {
@@ -257,6 +257,10 @@ body {
                     color: #aaa;;
                 }
 
+                .blog-text {
+                    word-break: break-all;
+                }
+
                 .read-article {
                     display: block;
                     text-align: right;
@@ -271,7 +275,6 @@ body {
                     }
                 }
             }
-
         }
     }
 
@@ -315,9 +318,9 @@ body {
                     border-radius: 8px;
 
                     &:hover {
-                    background-position: -100% 0;
-                    color: #fff;
-                  }
+                        background-position: -100% 0;
+                        color: #fff;
+                    }
                 }
 
                 .link-twitter {
@@ -443,6 +446,12 @@ body {
         .slide {
             .slide-list {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        .blog {
+            .blog-list {
+
             }
         }
 
