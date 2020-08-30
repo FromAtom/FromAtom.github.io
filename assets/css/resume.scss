@@ -1,0 +1,90 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "normalize";
+
+body {
+    font-family: 'Lato', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: #222;
+    box-sizing: border-box;
+    background-color: #F8F3EF;
+    width: 720px;
+    padding: 72px 0;
+    margin: 0 auto;
+
+    h1 {
+        margin: 0 0 32px;
+        font-size: 48px;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+    }
+
+    h2 {
+        margin: 0 0 24px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        position: relative;
+
+        a {
+            color: #222;
+        }
+
+        &::after {
+            position: absolute;
+            content: " ";
+            display: block;
+            border-bottom: solid 3px #ffc778;
+            bottom: -8px;
+            width: 48px;
+        }
+    }
+
+    h3 {
+        margin: 0 0 14px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        position: relative;
+
+        a {
+            color: #222;
+        }
+    }
+
+    h4 {
+        margin: 0 0 14px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        position: relative;
+
+        a {
+            color: #222;
+        }
+    }
+
+
+    a {
+        color: #1E6E8C;
+        text-decoration: none;
+
+        &:hover {
+            color: #003A50;
+        }
+    }
+
+    ul, ol {
+        padding: 0em 0em 0px 24px;
+    }
+
+    ul li, ol li {
+        line-height: 1.5;
+        padding: 0.5em 0;
+    }
+}
